@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+    
+.navbar-logo {
+    font-size: 1.5rem;
+}
+    
+.navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+    
+.navbar-links li {
+    margin-left: 20px;
+}
+    
+.navbar-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+    
+.burger {
+    display: none;
+    cursor: pointer;
+}
+    
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.tshirt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tshirt-item {
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-links li {
+        margin-left: 0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+/* input[type="submit"]{
+    padding-left: 20px;
+} */
+/* .navbuttons{
+    padding-right: 20%;
+} */

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt Store</title>
+    <link rel="stylesheet" href="style/style.css"/>
+</head>
+
+<body>
+    <header>
+        <h1>T-Shirt Store</h1>
+    </header>
+
+    <nav class="navbar">
+        <div class="burger" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <div class="navbar-logo">sun</div>
+
+        <ul class="navbar-links" id="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <input type="search" name="searchitem" id="searchitem">
+    
+    </nav> 
+    
+
+    <div class="container">
+        <div class="tshirt">
+            <div class="tshirt-item">
+                <img src="tshirt1.jpg" alt="T-Shirt 1">
+                <h2>T-Shirt 1</h2>
+                <p>$20.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="tshirt-item">
+                <img src="tshirt1.jpg" alt="T-Shirt 1">
+                <h2>T-Shirt 1</h2>
+                <p>$20.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="tshirt-item">
+                <img src="tshirt1.jpg" alt="T-Shirt 1">
+                <h2>T-Shirt 1</h2>
+                <p>$20.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="tshirt-item">
+                <img src="tshirt1.jpg" alt="T-Shirt 1">
+                <h2>T-Shirt 1</h2>
+                <p>$20.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="tshirt-item">
+                <img src="tshirt2.jpg" alt="T-Shirt 2">
+                <h2>T-Shirt 2</h2>
+                <p>$18.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Add more tshirt items as needed -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 T-Shirt Store. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById('menu');
+        menu.classList.toggle('active');
+    }
+</script>
+</html>
